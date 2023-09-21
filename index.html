@@ -3,34 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" />
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
         <title>Vaibhav Prakash - Portfolio</title>
     </head>
 
-    <body>
-        <header>
-            <h1>Vaibhav Prakash</h1>
-            <p id="about">
+    <body class="bg-gray-200 text-gray-500">
+        <header class="py-8 px-8 text-gray-900">
+            <h1 class="text-6xl font-bold">Vaibhav Prakash</h1>
+            <p class="w-5/6 pt-4 text-xl opacity-75" id="about">
                 As a self-taught designer and developer, I thrive on versatility
                 and taking on any task. I am constantly building and picking up
-                new skills, making me your go-to person to get things done.I'm
+                new skills, making me your go-to person to get things done. I'm
                 looking to work with small and ambitious teams to make big
                 things happen.
             </p>
         </header>
 
-        <main>
-            <section>
-                <h2>Work Experience</h2>
+        <main class="flex flex-col gap-6 px-6">
+            <section class="bg-white p-4 rounded-xl shadow-md">
+                <h2 class="text-3xl text-gray-500">Work Experience</h2>
 
                 <article>
-                    <h3>Kuru Labs: Co-founder</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Kuru Labs: Co-founder
+                    </h3>
                     <p>
                         Kuru is a DeFi protocol to trade perpetuals and borrow
                         on your portfolio of positions without increasing your
                         risk.
                     </p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             Developed the liquidation mechanism and risk engine.
                         </li>
@@ -43,12 +50,14 @@
                 </article>
 
                 <article>
-                    <h3>Notebook Labs (YC S22): Founder’s Office</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Notebook Labs (YC S22): Founder’s Office
+                    </h3>
                     <p>
-                        Using Zero Knowledge to build anonymous and accountable
-                        identities for Web3.
+                        Notebook uses Zero Knowledge to build anonymous and
+                        accountable identities for Web3.
                     </p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             Worked with founders on product ideas, UI/UX,
                             business development, and research.
@@ -60,9 +69,11 @@
                 </article>
 
                 <article>
-                    <h3>Metapass: Product and Growth lead</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Metapass: Product and Growth lead
+                    </h3>
                     <p>Metapass is an NFT based ticketing platform.</p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>Ideated and created a new product.</li>
                         <li>
                             Worked closely with the founders to craft a GTM
@@ -74,12 +85,14 @@
                 </article>
 
                 <article>
-                    <h3>GrowthX: GrowthX fellow</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        GrowthX: GrowthX fellow
+                    </h3>
                     <p>
                         GrowthX is a community for top founders & growth
                         leaders.
                     </p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             Worked on assignments covering Acquisition,
                             Onboarding, Engagement & Retention, Monetization and
@@ -92,12 +105,12 @@
                     </ul>
                 </article>
             </section>
-            <section>
-                <h2>Writing</h2>
+            <section class="bg-white p-4 rounded-xl shadow-md">
+                <h2 class="text-3xl text-gray-500">Writing</h2>
 
                 <div>
-                    <h3>Web3</h3>
-                    <ul>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">Web3</h3>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             <a
                                 href="https://medium.com/@vaibhav_prakash/the-op-airdrop-4-months-late-8f7b6ea90081"
@@ -118,8 +131,8 @@
                 </div>
 
                 <div>
-                    <h3>Growth</h3>
-                    <ul>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">Growth</h3>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             <a
                                 href="https://www.notion.so/e5553ed330c74e8994529b4547b5cbaa?pvs=21"
@@ -140,53 +153,57 @@
                 </div>
             </section>
 
-            <section>
-                <h2>My Stack</h2>
+            <section class="bg-white p-4 rounded-xl shadow-md">
+                <h2 class="text-3xl text-gray-500 pt-6 pb-6">My Stack</h2>
 
-                <table border="1">
-                    <thead>
+                <table class="table-auto border border-gray-800 w-1/4">
+                    <thead class="bg-gray-500 text-white">
                         <tr>
-                            <th scope="col">Data</th>
-                            <th scope="col">Front-end</th>
-                            <th scope="col">Design & Video</th>
+                            <th scope="col" class="px-4 py-2">Data</th>
+                            <th scope="col" class="px-4 py-2">Front-end</th>
+                            <th scope="col" class="px-4 py-2">
+                                Design & Video
+                            </th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Python</td>
-                            <td>Figma</td>
-                            <td>After Effects</td>
+                        <tr class="border-b border-gray-500">
+                            <td class="px-4 py-2">Python</td>
+                            <td class="px-4 py-2">Figma</td>
+                            <td class="px-4 py-2">After Effects</td>
                         </tr>
-                        <tr>
-                            <td>Dune</td>
-                            <td>TypeScript</td>
-                            <td>DaVinci Resolve</td>
+                        <tr class="border-b border-gray-500">
+                            <td class="px-4 py-2">Dune</td>
+                            <td class="px-4 py-2">TypeScript</td>
+                            <td class="px-4 py-2">DaVinci Resolve</td>
                         </tr>
-                        <tr>
-                            <td>Pandas</td>
-                            <td>NextJS</td>
-                            <td>Adobe Illustrator</td>
+                        <tr class="border-b border-gray-500">
+                            <td class="px-4 py-2">Pandas</td>
+                            <td class="px-4 py-2">NextJS</td>
+                            <td class="px-4 py-2">Adobe Illustrator</td>
                         </tr>
-                        <tr>
-                            <td>Numpy</td>
-                            <td>Tailwind CSS</td>
-                            <td></td>
+                        <tr class="border-b border-gray-500">
+                            <td class="px-4 py-2">Numpy</td>
+                            <td class="px-4 py-2">Tailwind CSS</td>
+                            <td class="px-4 py-2"></td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
-            <section>
-                <h2>Projects</h2>
+            <section class="bg-white p-4 rounded-xl shadow-md">
+                <h2 class="text-3xl text-gray-500">Projects</h2>
 
                 <div>
-                    <h3>tinydancer - Designed and built a blog</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        tinydancer - Designed and built a blog
+                    </h3>
                     <p>
                         Tinydancer is an open-source light client implementation
                         for the Solana blockchain, making the network more trust
                         minimized.
                     </p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>Designed the blog from scratch</li>
                         <li>
                             Implemented on their website using Typescript,
@@ -196,13 +213,15 @@
                 </div>
 
                 <div>
-                    <h3>Mike Karnj - Video Producer</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Mike Karnj - Video Producer
+                    </h3>
                     <p>
                         Worked with Michael Karnjanaprakorn,
                         <strong>the founder of Skillshare</strong> on his video
                         strategy
                     </p>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>Helped repurpose content to Youtube Shorts.</li>
                         <li>Made a content plan to post on Youtube</li>
                         <li>
@@ -213,7 +232,9 @@
                 </div>
 
                 <div>
-                    <h3>Ligo - Co-founder (D2C)</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Ligo - Co-founder (D2C)
+                    </h3>
                     <p>
                         Founded a D2C brand that sold organic cooking oil.
                         Looked after all things marketing, online store and
@@ -222,7 +243,9 @@
                 </div>
 
                 <div>
-                    <h3>Fact Chutney - Video Producer</h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
+                        Fact Chutney - Video Producer
+                    </h3>
                     <p>
                         Started a Youtube channel with my brother during
                         COVID-19. We covered topics like history, politics and
@@ -231,15 +254,15 @@
                 </div>
             </section>
 
-            <section>
-                <h2>Education</h2>
+            <section class="bg-white p-4 rounded-xl shadow-md">
+                <h2 class="text-3xl text-gray-500">Education</h2>
 
                 <div>
-                    <h3>
+                    <h3 class="text-xl text-gray-900 pt-4 pb-4">
                         Center for Management Studies - Bachelors in Business
                         Administration
                     </h3>
-                    <ul>
+                    <ul class="list-disc pl-6 pt-2">
                         <li>
                             Winner of multiple National Level Management events
                             with cash prizes ₹50k+ (and a trip to Dubai).
